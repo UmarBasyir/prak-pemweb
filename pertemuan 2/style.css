@@ -1,0 +1,76 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.cv {
+    background-color: #dd0f0f;
+    margin: 10px;
+    width: 800px;
+}
+
+.atas {
+    display: flex;
+    justify-content: start;
+    background-color: #dd0f0f;
+    padding: 20px;
+}
+
+.judul {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    padding: 5px;
+    background-color: #333;
+
+}
+
+.menu a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.tentang {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.video {
+    text-align: center;
+}
+
+.pengalaman {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.pengalaman table {
+    width: 100%;
+}
+
+.kontak {
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.kontak button {
+    background-color: lightgreen;
+}
+
+.bawah {
+    display: flex;
+    background-color: #333;
+    color: white;
+}
