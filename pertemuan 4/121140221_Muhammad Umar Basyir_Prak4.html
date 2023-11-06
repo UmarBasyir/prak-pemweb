@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>121140221_Muhammad Umar Basyir_Prak4</title>
+    <script>
+    function hitungGanjilGenap() {
+    var bilangan = parseInt(document.getElementById("bilanganInput").value);
+    
+    if (isNaN(bilangan) || bilangan <= 0) {
+        document.getElementById("hasil").innerHTML = "Masukkan bilangan bulat positif yang valid.";
+        return;
+        }
+    
+        var jumlahGanjil = 0;
+        var jumlahGenap = 0;
+    
+        for (var i = 1; i <= bilangan; i++) {
+            if (i % 2 === 0) {
+                jumlahGenap++;
+            } else {
+                jumlahGanjil++;
+                }
+            }
+
+        document.getElementById("hasil").innerHTML = "Jumlah Bilangan Ganjil: " + jumlahGanjil + "<br>Jumlah Bilangan Genap: " + jumlahGenap;
+    }
+    </script>
+    </head>
+    <body>
+        <h1>Hitung Bilangan Ganjil dan Genap</h1>
+        <label for="bilanganInput">Masukkan bilangan bulat positif: </label><br>
+        <input type="number" id="bilanganInput" />
+        <button onclick="hitungGanjilGenap()">Hitung</button><br>
+        <p>Hasil :</p>
+        <span id="hasil"></span>
+    </body>
+    </html>
